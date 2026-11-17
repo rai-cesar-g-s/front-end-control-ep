@@ -1,0 +1,298 @@
+/* Sobrescritas responsivas e impressão, carregadas por último. */
+@media (min-width: 1600px) {
+  main {
+    padding-top: 46px;
+  }
+  .stats {
+    gap: 20px;
+  }
+  .stat {
+    padding: 22px;
+  }
+  .page-heading {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 210px;
+  }
+  .main-wrap {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+  }
+  main {
+    padding: 28px 25px;
+  }
+  .topbar {
+    padding: 0 25px;
+  }
+  .stats {
+    gap: 9px;
+  }
+  .stat {
+    padding: 13px 11px;
+  }
+  .stat > div {
+    font-size: 10px;
+  }
+  .stat small {
+    font-size: 8px;
+  }
+  .stat-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .page-heading {
+    align-items: start;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .heading-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .date-caption {
+    padding-top: 20px;
+  }
+  td,
+  th {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 950px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dashboard-toolbar {
+    align-items: start;
+  }
+  .dashboard-toolbar .filters {
+    gap: 8px;
+  }
+  .dashboard-toolbar .filters label {
+    min-width: 110px;
+  }
+  .stat small {
+    font-size: 9px;
+  }
+  .topbar-title {
+    display: none;
+  }
+  .heading-actions {
+    max-width: 350px;
+  }
+  .primary,
+  .secondary {
+    padding: 9px 11px;
+  }
+  .page-heading {
+    flex-wrap: wrap;
+  }
+  .heading-actions {
+    max-width: none;
+  }
+  .page-heading p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 800px) {
+  .sidebar {
+    width: 240px;
+    box-shadow: 15px 0 60px #1a2b3c10;
+  }
+  .main-wrap,
+  .collapsed .main-wrap {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mobile-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #1a2b3c44;
+    z-index: 25;
+  }
+  .close-sidebar {
+    display: flex;
+  }
+  main {
+    padding: 26px 20px;
+  }
+  .topbar {
+    height: 60px;
+    padding: 0 20px;
+  }
+  .topbar-title {
+    display: block;
+  }
+  .topbar > div {
+    gap: 12px;
+  }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stats .stat:first-child {
+    grid-column: 1/-1;
+  }
+  .stats.three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .stats.three .stat:first-child {
+    grid-column: auto;
+  }
+  .stat {
+    padding: 16px;
+    min-height: 120px;
+  }
+  .stat > div {
+    font-size: 11px;
+  }
+  .stat small {
+    font-size: 9px;
+  }
+  .dashboard-toolbar {
+    flex-wrap: wrap;
+  }
+  .dashboard-toolbar .filters {
+    width: 100%;
+  }
+  .dashboard-toolbar .filters label {
+    flex: 1;
+  }
+  .page-heading {
+    gap: 16px;
+    margin-bottom: 23px;
+  }
+  .date-caption {
+    padding-top: 0;
+    font-size: 10px;
+  }
+  .eyebrow {
+    font-size: 8px;
+  }
+  .filter-card label {
+    flex: 1 1 130px;
+  }
+  .dashboard-note {
+    font-size: 9px;
+  }
+  .dashboard-note > span:last-child {
+    display: none;
+  }
+  .list-toolbar {
+    flex-wrap: wrap;
+  }
+  .list-toolbar .search {
+    margin-left: auto;
+  }
+  .permission-list {
+    min-width: 250px;
+  }
+  footer {
+    padding: 20px;
+    font-size: 9px;
+  }
+  footer span {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  .topbar-title {
+    font-size: 10px;
+  }
+  .system-status {
+    font-size: 9px;
+  }
+  .stats.three {
+    grid-template-columns: 1fr;
+  }
+  .stat strong {
+    font-size: 27px;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .modal-heading {
+    padding: 20px;
+  }
+  .modal-heading h2 {
+    font-size: 16px;
+  }
+  .search {
+    width: 100%;
+  }
+  .search input {
+    width: 100%;
+  }
+  .list-toolbar .search {
+    margin-left: 0;
+  }
+  .heading-actions {
+    gap: 7px;
+  }
+  .primary,
+  .secondary {
+    font-size: 10px;
+    padding: 9px;
+  }
+  .tabs button {
+    font-size: 10px;
+  }
+  .auth-brand {
+    left: 24px;
+    top: 20px;
+  }
+  .toast {
+    right: 16px;
+    bottom: 16px;
+  }
+  .auth-content {
+    padding-top: 100px;
+  }
+  .modal-overlay {
+    padding: 14px;
+  }
+}
+@media print {
+  .sidebar,
+  .topbar,
+  footer,
+  .heading-actions,
+  .toast,
+  .dashboard-note,
+  .mobile-backdrop {
+    display: none !important;
+  }
+  .main-wrap {
+    margin: 0;
+    width: 100%;
+  }
+  main {
+    padding: 15px;
+  }
+  .app,
+  body {
+    background: white;
+  }
+  .table-scroll {
+    overflow: visible;
+  }
+  .filter-card {
+    border: 0;
+    padding: 0;
+  }
+  select {
+    appearance: none;
+    border: 0 !important;
+  }
+  .page-heading {
+    margin-bottom: 20px;
+  }
+}

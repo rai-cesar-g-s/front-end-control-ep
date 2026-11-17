@@ -1,0 +1,9 @@
+node_modules
+dist
+*.local
+*.tsbuildinfo
+
+# Configurações de ambiente locais; apenas o modelo público pode subir ao GitHub.
+.env
+.env.*
+!.env.example

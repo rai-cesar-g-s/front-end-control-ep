@@ -1,0 +1,149 @@
+/* Tokens, tipografia, reset e elementos HTML compartilhados. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@500;600;650;700;750;800&display=swap');
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #202735;
+  background: #f7f9fc;
+  font-synthesis: none;
+  font-weight: 400;
+  font-size: 14px;
+  --red: #ed080b;
+  --muted: #8993a3;
+  --line: #e9edf3;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  transition:
+    background 0.16s,
+    color 0.16s,
+    box-shadow 0.16s;
+}
+button {
+  cursor: pointer;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #f8a5a7;
+  outline-offset: 3px;
+}
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  height: 38px;
+  padding: 0 11px;
+  border: 1px solid #e1e6ed;
+  border-radius: 6px;
+  background: #fff;
+  color: #4f5b6c;
+  outline: none;
+}
+input:focus,
+select:focus {
+  border-color: #f07577;
+  box-shadow: 0 0 0 3px #ed080b0a;
+}
+input::placeholder {
+  color: #a2aaba;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #526074;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2 {
+  font-family: 'Manrope', sans-serif;
+}
+h1 {
+  font-size: 27px;
+  font-weight: 750;
+  letter-spacing: -1px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.primary,
+.secondary {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+  min-height: 37px;
+}
+.primary {
+  background: var(--red);
+  color: white;
+  box-shadow: 0 2px 3px #ed080b12;
+}
+.primary:hover {
+  background: #cf0306;
+}
+.secondary {
+  background: #fff;
+  border-color: #e1e6ed;
+  color: #536074;
+  box-shadow: 0 1px 2px #23304c04;
+}
+.secondary:hover {
+  background: #f4f6f9;
+}
+.icon-button {
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: #8390a3;
+  padding: 7px;
+}
+.icon-button:hover {
+  background: #f1f3f7;
+}
